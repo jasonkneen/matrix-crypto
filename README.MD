@@ -29,7 +29,37 @@ Is best run on linux terminal as window curses seems to be lacking some features
 
 ## Installation
 
-Clone the Repository
+### Linux one-line install
+
+No API keys required — prices come from the free [CoinGecko](https://www.coingecko.com/) public API.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/bigsk1/matrix-crypto/main/install.sh | bash
+```
+
+Then run:
+
+```bash
+matrixc
+```
+
+Press `Ctrl+C` to exit.
+
+If `matrixc` is not found, add `~/.local/bin` to your PATH:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+To install somewhere else:
+
+```bash
+MATRIX_CRYPTO_INSTALL_DIR=~/matrix-crypto curl -fsSL https://raw.githubusercontent.com/bigsk1/matrix-crypto/main/install.sh | bash
+```
+
+### Manual install
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/bigsk1/matrix-crypto.git

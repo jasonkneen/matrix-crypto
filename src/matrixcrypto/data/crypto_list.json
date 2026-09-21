@@ -1,0 +1,104 @@
+{
+  "cryptos": [
+    {
+      "id": "bitcoin",
+      "ticker": "BTC",
+      "name": "Bitcoin"
+    },
+    {
+      "id": "ethereum",
+      "ticker": "ETH",
+      "name": "Ethereum"
+    },
+    {
+      "id": "tether",
+      "ticker": "USDT",
+      "name": "Tether"
+    },
+    {
+      "id": "binancecoin",
+      "ticker": "BNB",
+      "name": "BNB"
+    },
+    {
+      "id": "ripple",
+      "ticker": "XRP",
+      "name": "XRP"
+    },
+    {
+      "id": "usd-coin",
+      "ticker": "USDC",
+      "name": "USDC"
+    },
+    {
+      "id": "solana",
+      "ticker": "SOL",
+      "name": "Solana"
+    },
+    {
+      "id": "tron",
+      "ticker": "TRX",
+      "name": "TRON"
+    },
+    {
+      "id": "zcash",
+      "ticker": "ZEC",
+      "name": "Zcash"
+    },
+    {
+      "id": "figure-heloc",
+      "ticker": "FIGR_HELOC",
+      "name": "Figure Heloc"
+    },
+    {
+      "id": "hyperliquid",
+      "ticker": "HYPE",
+      "name": "Hyperliquid"
+    },
+    {
+      "id": "dogecoin",
+      "ticker": "DOGE",
+      "name": "Dogecoin"
+    },
+    {
+      "id": "monero",
+      "ticker": "XMR",
+      "name": "Monero"
+    },
+    {
+      "id": "rain",
+      "ticker": "RAIN",
+      "name": "Rain"
+    },
+    {
+      "id": "whitebit",
+      "ticker": "WBT",
+      "name": "WhiteBIT Coin"
+    },
+    {
+      "id": "usds",
+      "ticker": "USDS",
+      "name": "USDS"
+    },
+    {
+      "id": "chainlink",
+      "ticker": "LINK",
+      "name": "Chainlink"
+    },
+    {
+      "id": "cardano",
+      "ticker": "ADA",
+      "name": "Cardano"
+    },
+    {
+      "id": "leo-token",
+      "ticker": "LEO",
+      "name": "LEO Token"
+    },
+    {
+      "id": "stellar",
+      "ticker": "XLM",
+      "name": "Stellar"
+    }
+  ]
+}

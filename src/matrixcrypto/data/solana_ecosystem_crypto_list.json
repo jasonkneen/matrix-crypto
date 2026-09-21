@@ -1,0 +1,104 @@
+{
+  "cryptos": [
+    {
+      "id": "tether",
+      "ticker": "USDT",
+      "name": "Tether"
+    },
+    {
+      "id": "usd-coin",
+      "ticker": "USDC",
+      "name": "USDC"
+    },
+    {
+      "id": "solana",
+      "ticker": "SOL",
+      "name": "Solana"
+    },
+    {
+      "id": "usds",
+      "ticker": "USDS",
+      "name": "USDS"
+    },
+    {
+      "id": "wrapped-bitcoin",
+      "ticker": "WBTC",
+      "name": "Wrapped Bitcoin"
+    },
+    {
+      "id": "chainlink",
+      "ticker": "LINK",
+      "name": "Chainlink"
+    },
+    {
+      "id": "coinbase-wrapped-btc",
+      "ticker": "CBBTC",
+      "name": "Coinbase Wrapped BTC"
+    },
+    {
+      "id": "ethena-usde",
+      "ticker": "USDE",
+      "name": "Ethena USDe"
+    },
+    {
+      "id": "usd1-wlfi",
+      "ticker": "USD1",
+      "name": "USD1"
+    },
+    {
+      "id": "global-dollar",
+      "ticker": "USDG",
+      "name": "Global Dollar"
+    },
+    {
+      "id": "paypal-usd",
+      "ticker": "PYUSD",
+      "name": "PayPal USD"
+    },
+    {
+      "id": "hashnote-usyc",
+      "ticker": "USYC",
+      "name": "Circle USYC"
+    },
+    {
+      "id": "blackrock-usd-institutional-digital-liquidity-fund",
+      "ticker": "BUIDL",
+      "name": "BlackRock USD Institutional Digital Liquidity Fund"
+    },
+    {
+      "id": "ondo-us-dollar-yield",
+      "ticker": "USDY",
+      "name": "Ondo US Dollar Yield"
+    },
+    {
+      "id": "ethena",
+      "ticker": "ENA",
+      "name": "Ethena"
+    },
+    {
+      "id": "aave",
+      "ticker": "AAVE",
+      "name": "Aave"
+    },
+    {
+      "id": "pump-fun",
+      "ticker": "PUMP",
+      "name": "Pump.fun"
+    },
+    {
+      "id": "world-liberty-financial",
+      "ticker": "WLFI",
+      "name": "World Liberty Financial"
+    },
+    {
+      "id": "wrapped-solana",
+      "ticker": "WSOL",
+      "name": "Wrapped SOL"
+    },
+    {
+      "id": "usdgo",
+      "ticker": "USDGO",
+      "name": "USDGO"
+    }
+  ]
+}

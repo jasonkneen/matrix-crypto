@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matrixcrypto"
+version = "0.1.0"
+description = "A Matrix-style terminal display for cryptocurrency tickers and prices"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE.md"]
+authors = [{name = "bigsk1"}]
+keywords = ["cryptocurrency", "terminal", "curses", "matrix"]
+classifiers = [
+    "Environment :: Console :: Curses",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Terminals",
+]
+dependencies = [
+    "requests>=2.31,<3",
+    "windows-curses>=2.4.2,<3; platform_system == 'Windows'",
+]
+
+[project.urls]
+Homepage = "https://github.com/bigsk1/matrix-crypto"
+Issues = "https://github.com/bigsk1/matrix-crypto/issues"
+
+[project.scripts]
+matrixcrypto = "matrixcrypto.app:main"
+matrixcrypto-offline = "matrixcrypto.app:offline_main"
+matrixcrypto-update-list = "matrixcrypto.lists:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+matrixcrypto = ["data/*.json"]

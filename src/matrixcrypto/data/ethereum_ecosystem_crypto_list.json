@@ -1,0 +1,104 @@
+{
+  "cryptos": [
+    {
+      "id": "ethereum",
+      "ticker": "ETH",
+      "name": "Ethereum"
+    },
+    {
+      "id": "tether",
+      "ticker": "USDT",
+      "name": "Tether"
+    },
+    {
+      "id": "binancecoin",
+      "ticker": "BNB",
+      "name": "BNB"
+    },
+    {
+      "id": "usd-coin",
+      "ticker": "USDC",
+      "name": "USDC"
+    },
+    {
+      "id": "staked-ether",
+      "ticker": "STETH",
+      "name": "Lido Staked Ether"
+    },
+    {
+      "id": "wrapped-steth",
+      "ticker": "WSTETH",
+      "name": "Wrapped stETH"
+    },
+    {
+      "id": "whitebit",
+      "ticker": "WBT",
+      "name": "WhiteBIT Coin"
+    },
+    {
+      "id": "wrapped-beacon-eth",
+      "ticker": "WBETH",
+      "name": "Wrapped Beacon ETH"
+    },
+    {
+      "id": "usds",
+      "ticker": "USDS",
+      "name": "USDS"
+    },
+    {
+      "id": "wrapped-bitcoin",
+      "ticker": "WBTC",
+      "name": "Wrapped Bitcoin"
+    },
+    {
+      "id": "chainlink",
+      "ticker": "LINK",
+      "name": "Chainlink"
+    },
+    {
+      "id": "leo-token",
+      "ticker": "LEO",
+      "name": "LEO Token"
+    },
+    {
+      "id": "coinbase-wrapped-btc",
+      "ticker": "CBBTC",
+      "name": "Coinbase Wrapped BTC"
+    },
+    {
+      "id": "aave-v3-weth",
+      "ticker": "AWETH",
+      "name": "Aave v3 WETH"
+    },
+    {
+      "id": "wrapped-eeth",
+      "ticker": "WEETH",
+      "name": "Wrapped eETH"
+    },
+    {
+      "id": "weth",
+      "ticker": "WETH",
+      "name": "WETH"
+    },
+    {
+      "id": "uniswap",
+      "ticker": "UNI",
+      "name": "Uniswap"
+    },
+    {
+      "id": "ethena-usde",
+      "ticker": "USDE",
+      "name": "Ethena USDe"
+    },
+    {
+      "id": "dai",
+      "ticker": "DAI",
+      "name": "Dai"
+    },
+    {
+      "id": "susds",
+      "ticker": "SUSDS",
+      "name": "sUSDS"
+    }
+  ]
+}

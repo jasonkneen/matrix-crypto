@@ -24,6 +24,7 @@ Usage:
 
 Environment variables:
   MATRIX_CRYPTO_INSTALL_DIR   Install location (default: ~/.local/share/matrix-crypto)
+  MATRIX_CRYPTO_PYTHON        Python 3.12+ interpreter (default: python3)
 
 No API keys are required. Prices come from the free CoinGecko public API.
 EOF
@@ -38,16 +39,18 @@ if ! command -v git >/dev/null 2>&1; then
     error "git is required. Install it with your package manager (e.g. sudo apt install git)."
 fi
 
-if ! command -v python3 >/dev/null 2>&1; then
-    error "python3 is required. Install Python 3.8+ with your package manager."
+PYTHON_BIN="${MATRIX_CRYPTO_PYTHON:-python3}"
+if ! "${PYTHON_BIN}" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 12) else 1)' 2>/dev/null; then
+    if [[ -z "${MATRIX_CRYPTO_PYTHON:-}" ]] && command -v python3.12 >/dev/null 2>&1; then
+        PYTHON_BIN=python3.12
+    fi
+fi
+if ! "${PYTHON_BIN}" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 12) else 1)' 2>/dev/null; then
+    error "Python 3.12 or newer is required."
 fi
 
-if ! python3 -c 'import sys; sys.exit(0 if sys.version_info >= (3, 8) else 1)'; then
-    error "Python 3.8 or newer is required."
-fi
-
-if ! python3 -c 'import ensurepip' >/dev/null 2>&1; then
-    py_version="$(python3 -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
+if ! "${PYTHON_BIN}" -c 'import ensurepip' >/dev/null 2>&1; then
+    py_version="$("${PYTHON_BIN}" -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
     error "python3-venv is required. On Debian/Ubuntu: sudo apt install python${py_version}-venv"
 fi
 
@@ -62,19 +65,20 @@ fi
 
 if [[ ! -d "${INSTALL_DIR}/venv" ]]; then
     info "Creating virtual environment"
-    python3 -m venv "${INSTALL_DIR}/venv"
+    "${PYTHON_BIN}" -m venv "${INSTALL_DIR}/venv"
+elif ! "${INSTALL_DIR}/venv/bin/python" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 12) else 1)' 2>/dev/null; then
+    error "Existing virtual environment uses an older Python. Remove ${INSTALL_DIR}/venv and rerun the installer."
 fi
 
-info "Installing Python dependencies"
+info "Installing Matrix Crypto"
 "${INSTALL_DIR}/venv/bin/pip" install --upgrade pip -q
-"${INSTALL_DIR}/venv/bin/pip" install -r "${INSTALL_DIR}/requirements.txt" -q
+"${INSTALL_DIR}/venv/bin/pip" install --upgrade "${INSTALL_DIR}" -q
 
 mkdir -p "${BIN_DIR}"
 cat > "${BIN_DIR}/${COMMAND_NAME}" <<EOF
 #!/usr/bin/env bash
 INSTALL_DIR="${INSTALL_DIR}"
-cd "\${INSTALL_DIR}" || exit 1
-exec "\${INSTALL_DIR}/venv/bin/python" matrix_crypto.py "\$@"
+exec "\${INSTALL_DIR}/venv/bin/matrixcrypto" "\$@"
 EOF
 chmod +x "${BIN_DIR}/${COMMAND_NAME}"
 

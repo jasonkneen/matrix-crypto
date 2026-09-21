@@ -1,0 +1,64 @@
+{
+  "cryptos": [
+    {
+      "id": "bitcoin",
+      "ticker": "BTC",
+      "name": "Bitcoin"
+    },
+    {
+      "id": "ethereum",
+      "ticker": "ETH",
+      "name": "Ethereum"
+    },
+    {
+      "id": "binancecoin",
+      "ticker": "BNB",
+      "name": "BNB"
+    },
+    {
+      "id": "ripple",
+      "ticker": "XRP",
+      "name": "XRP"
+    },
+    {
+      "id": "solana",
+      "ticker": "SOL",
+      "name": "Solana"
+    },
+    {
+      "id": "tron",
+      "ticker": "TRX",
+      "name": "TRON"
+    },
+    {
+      "id": "zcash",
+      "ticker": "ZEC",
+      "name": "Zcash"
+    },
+    {
+      "id": "hyperliquid",
+      "ticker": "HYPE",
+      "name": "Hyperliquid"
+    },
+    {
+      "id": "dogecoin",
+      "ticker": "DOGE",
+      "name": "Dogecoin"
+    },
+    {
+      "id": "monero",
+      "ticker": "XMR",
+      "name": "Monero"
+    },
+    {
+      "id": "chainlink",
+      "ticker": "LINK",
+      "name": "Chainlink"
+    },
+    {
+      "id": "cardano",
+      "ticker": "ADA",
+      "name": "Cardano"
+    }
+  ]
+}
